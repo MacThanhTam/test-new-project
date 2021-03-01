@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="images/favicon.png">
+       
+   {% block cssblock %}
+   {% endblock cssblock %}
+    </head>
+    <body id="home">
+        <div class="wrapper">
+        {% include "pages/header.html" %}
+        {% block content %}
+        
+        {% endblock content %}
+        {% include "pages/footer.html" %}
+         </div>
+    {% block jsblock %}
+    
+    {% endblock jsblock %}
+    </body>
+</html>
